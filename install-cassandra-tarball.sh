@@ -32,7 +32,7 @@ set -x
 echo "${SHA1} ${TARBALL}" > ${TARBALL}.sha1
 
 # copy in from the Dockerfile for now to save downloads
-#curl -O -s ${URL}
+curl -O -s ${URL}
 
 sha1sum --check ${TARBALL}.sha1
 
